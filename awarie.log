@@ -1,0 +1,151 @@
+2026-10-12 09:12:52,802 | ERROR | AWARIA | funkcja=utworz_konto | wyjatek=ValueError | komunikat=Nieprawidlowy numer konta
+Traceback (most recent call last):
+  File "C:\Users\adi\Desktop\zespol_F\zespol_F.py", line 46, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\adi\Desktop\zespol_F\zespol_F.py", line 198, in utworz_konto
+    raise ValueError(
+        "Nieprawidlowy numer konta"
+    )
+ValueError: Nieprawidlowy numer konta
+2026-10-12 09:12:52,821 | ERROR | AWARIA | funkcja=utworz_konto | wyjatek=ValueError | komunikat=Nieprawidlowy numer konta
+Traceback (most recent call last):
+  File "C:\Users\adi\Desktop\zespol_F\zespol_F.py", line 46, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\adi\Desktop\zespol_F\zespol_F.py", line 198, in utworz_konto
+    raise ValueError(
+        "Nieprawidlowy numer konta"
+    )
+ValueError: Nieprawidlowy numer konta
+2026-10-12 09:12:52,822 | ERROR | AWARIA | funkcja=wplac | wyjatek=ValueError | komunikat=Kwota wplaty musi byc dodatnia
+Traceback (most recent call last):
+  File "C:\Users\adi\Desktop\zespol_F\zespol_F.py", line 46, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\adi\Desktop\zespol_F\zespol_F.py", line 262, in wplac
+    raise ValueError(
+        "Kwota wplaty musi byc dodatnia"
+    )
+ValueError: Kwota wplaty musi byc dodatnia
+2026-10-12 09:12:52,823 | ERROR | AWARIA | funkcja=wplac | wyjatek=ValueError | komunikat=Kwota wplaty musi byc dodatnia
+Traceback (most recent call last):
+  File "C:\Users\adi\Desktop\zespol_F\zespol_F.py", line 46, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\adi\Desktop\zespol_F\zespol_F.py", line 262, in wplac
+    raise ValueError(
+        "Kwota wplaty musi byc dodatnia"
+    )
+ValueError: Kwota wplaty musi byc dodatnia
+2026-10-12 09:12:52,823 | ERROR | AWARIA | funkcja=wplac | wyjatek=InvalidOperation | komunikat=[<class 'decimal.ConversionSyntax'>]
+Traceback (most recent call last):
+  File "C:\Users\adi\Desktop\zespol_F\zespol_F.py", line 46, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\adi\Desktop\zespol_F\zespol_F.py", line 259, in wplac
+    kwota = Decimal(str(kwota))
+decimal.InvalidOperation: [<class 'decimal.ConversionSyntax'>]
+2026-10-12 09:12:52,824 | ERROR | AWARIA | funkcja=wyplac | wyjatek=ValueError | komunikat=Kwota wyplaty musi byc dodatnia
+Traceback (most recent call last):
+  File "C:\Users\adi\Desktop\zespol_F\zespol_F.py", line 46, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\adi\Desktop\zespol_F\zespol_F.py", line 290, in wyplac
+    raise ValueError(
+        "Kwota wyplaty musi byc dodatnia"
+    )
+ValueError: Kwota wyplaty musi byc dodatnia
+2026-10-12 09:12:52,824 | ERROR | AWARIA | funkcja=wyplac | wyjatek=ValueError | komunikat=Niewystarczajace srodki na koncie
+Traceback (most recent call last):
+  File "C:\Users\adi\Desktop\zespol_F\zespol_F.py", line 46, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\adi\Desktop\zespol_F\zespol_F.py", line 296, in wyplac
+    raise ValueError(
+        "Niewystarczajace srodki na koncie"
+    )
+ValueError: Niewystarczajace srodki na koncie
+2026-10-12 09:12:52,825 | ERROR | AWARIA | funkcja=wyplac | wyjatek=ValueError | komunikat=Przekroczono dzienny limit wyplat
+Traceback (most recent call last):
+  File "C:\Users\adi\Desktop\zespol_F\zespol_F.py", line 46, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\adi\Desktop\zespol_F\zespol_F.py", line 306, in wyplac
+    raise ValueError(
+        "Przekroczono dzienny limit wyplat"
+    )
+ValueError: Przekroczono dzienny limit wyplat
+2026-10-12 09:12:52,825 | ERROR | AWARIA | funkcja=wyplac | wyjatek=KontoZablokowane | komunikat=Konto 1234567895 jest zablokowane
+Traceback (most recent call last):
+  File "C:\Users\adi\Desktop\zespol_F\zespol_F.py", line 46, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\adi\Desktop\zespol_F\zespol_F.py", line 282, in wyplac
+    raise KontoZablokowane(
+        f"Konto {numer} jest zablokowane"
+    )
+KontoZablokowane: Konto 1234567895 jest zablokowane
+2026-10-12 09:12:52,826 | ERROR | AWARIA | funkcja=przelew | wyjatek=ValueError | komunikat=Kwota przelewu musi byc dodatnia
+Traceback (most recent call last):
+  File "C:\Users\adi\Desktop\zespol_F\zespol_F.py", line 46, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\adi\Desktop\zespol_F\zespol_F.py", line 347, in przelew
+    raise ValueError(
+        "Kwota przelewu musi byc dodatnia"
+    )
+ValueError: Kwota przelewu musi byc dodatnia
+2026-10-12 09:12:52,826 | ERROR | AWARIA | funkcja=przelew | wyjatek=KontoNieIstnieje | komunikat=Konto 0000000000 nie istnieje
+Traceback (most recent call last):
+  File "C:\Users\adi\Desktop\zespol_F\zespol_F.py", line 46, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\adi\Desktop\zespol_F\zespol_F.py", line 331, in przelew
+    konto_do = self._pobierz_konto(numer_do)
+  File "C:\Users\adi\Desktop\zespol_F\zespol_F.py", line 215, in _pobierz_konto
+    raise KontoNieIstnieje(
+        f"Konto {numer} nie istnieje"
+    )
+KontoNieIstnieje: Konto 0000000000 nie istnieje
+2026-10-12 09:12:52,827 | ERROR | AWARIA | funkcja=przelew | wyjatek=ValueError | komunikat=Niewystarczajace srodki na koncie zrodlowym
+Traceback (most recent call last):
+  File "C:\Users\adi\Desktop\zespol_F\zespol_F.py", line 46, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\adi\Desktop\zespol_F\zespol_F.py", line 353, in przelew
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Niewystarczajace srodki na koncie zrodlowym
+2026-10-12 09:12:52,827 | ERROR | AWARIA | funkcja=nalicz_odsetki | wyjatek=ValueError | komunikat=Liczba miesiecy musi byc dodatnia
+Traceback (most recent call last):
+  File "C:\Users\adi\Desktop\zespol_F\zespol_F.py", line 46, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\adi\Desktop\zespol_F\zespol_F.py", line 396, in nalicz_odsetki
+    raise ValueError(
+        "Liczba miesiecy musi byc dodatnia"
+    )
+ValueError: Liczba miesiecy musi byc dodatnia
+2026-10-12 09:12:52,828 | ERROR | AWARIA | funkcja=przelew_zewnetrzny | wyjatek=ProcesorNiedostepny | komunikat=Zewnetrzny procesor platnosci nie odpowiada
+Traceback (most recent call last):
+  File "C:\Users\adi\Desktop\zespol_F\zespol_F.py", line 46, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\adi\Desktop\zespol_F\zespol_F.py", line 531, in przelew_zewnetrzny
+    wynik = proc.wyslij_przelew(
+        numer_konta_docelowego_zewn,
+        kwota
+    )
+  File "C:\Users\adi\Desktop\zespol_F\zespol_F.py", line 111, in wyslij_przelew
+    raise ProcesorNiedostepny(
+        "Zewnetrzny procesor platnosci nie odpowiada"
+    )
+ProcesorNiedostepny: Zewnetrzny procesor platnosci nie odpowiada
+2026-10-12 09:12:52,829 | ERROR | AWARIA | funkcja=przelew_zewnetrzny | wyjatek=KontoZablokowane | komunikat=Konto 1234567895 jest zablokowane
+Traceback (most recent call last):
+  File "C:\Users\adi\Desktop\zespol_F\zespol_F.py", line 46, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\adi\Desktop\zespol_F\zespol_F.py", line 508, in przelew_zewnetrzny
+    raise KontoZablokowane(
+        f"Konto {numer_z} jest zablokowane"
+    )
+KontoZablokowane: Konto 1234567895 jest zablokowane
+2026-10-12 09:12:52,829 | ERROR | AWARIA | funkcja=wyplac | wyjatek=KontoNieIstnieje | komunikat=Konto 0000000000 nie istnieje
+Traceback (most recent call last):
+  File "C:\Users\adi\Desktop\zespol_F\zespol_F.py", line 46, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\adi\Desktop\zespol_F\zespol_F.py", line 278, in wyplac
+    konto = self._pobierz_konto(numer)
+  File "C:\Users\adi\Desktop\zespol_F\zespol_F.py", line 215, in _pobierz_konto
+    raise KontoNieIstnieje(
+        f"Konto {numer} nie istnieje"
+    )
+KontoNieIstnieje: Konto 0000000000 nie istnieje
